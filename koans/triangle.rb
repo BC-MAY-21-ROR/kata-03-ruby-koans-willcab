@@ -14,7 +14,13 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  sides={}
+  sides[a]=1
+  sides[c]=1
+  sides[b]=1
+  return :equilateral if sides.length==1
+  return :isosceles if sides.length==2
+  return :scalene
 end
 
 # Error class used in part 2.  No need to change this code.
